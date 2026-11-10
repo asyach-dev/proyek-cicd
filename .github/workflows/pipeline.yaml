@@ -33,7 +33,6 @@ jobs:
     needs: test # Hanya berjalan jika job testing BERHASIL
     if: github.ref == 'refs/heads/main' && github.event_name == 'push' # Hanya push saat push ke branch main
     runs-on: ubuntu-latest
-
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
